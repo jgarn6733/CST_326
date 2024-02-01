@@ -1,0 +1,2 @@
+Rollaball was too large to uplad at once on GitHub. Therefore, I split it into multiple .zip files. All zip files can be unzipped and the contents can be put into the folder
+that the .zip file was in and it will keep the proper file structure.
