@@ -27,7 +27,9 @@ public class PaddleController : MonoBehaviour
         Vector3 leftForce = Vector3.forward * leftPaddle * moveSpeed;
         Vector3 rightForce = Vector3.forward * rightPaddle * moveSpeed;
 
-        leftRb.AddForce(leftForce, ForceMode.Acceleration);
-        rightRb.AddForce(rightForce, ForceMode.Acceleration);
+        leftRb.AddForce(leftForce, ForceMode.Force);
+        rightRb.AddForce(rightForce, ForceMode.Force);
     }
+
+    
 }
