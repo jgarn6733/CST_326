@@ -40,6 +40,10 @@ public class Paddle : MonoBehaviour
         Vector3 newVelocity = new Vector3(newSign, 0f, 0f) * newSpeed;
         newVelocity = Quaternion.Euler(0f, newRotSign * 60f * bounceDirection, 0f) * newVelocity;
         other.rigidbody.velocity = newVelocity;
+        
+
+        AudioSource paddleSrc = GetComponent<AudioSource>();
+        paddleSrc.Play();
 
         // Debug.DrawRay(Vector3.zero, Vector3.right, Color.red);
         // Debug.DrawRay(Vector3.zero, Quaternion.Euler(0f, 30f, 0f) * Vector3.right, Color.yellow);
